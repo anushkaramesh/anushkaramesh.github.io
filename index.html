@@ -58,27 +58,58 @@
             justify-content: center;
         }
 
-        .hero {
+        .about-hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            text-align: center;
         }
 
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
+        .about-hero-content {
+            max-width: 1200px;
+            width: 100%;
         }
 
-        .hero h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
+        .about-header {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            border: 5px solid white;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            object-fit: cover;
+            background: white;
+        }
+
+        .about-intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .about-intro h2 {
+            font-size: 1.3rem;
             font-weight: 400;
+            opacity: 0.95;
         }
 
-        .hero p {
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto 2rem;
+        .about-text {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
         }
 
         .cta-buttons {
@@ -86,6 +117,7 @@
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
+            margin-top: 2rem;
         }
 
         .btn {
@@ -269,51 +301,6 @@
             color: #667eea;
         }
 
-        .about-section {
-            background: #f7fafc;
-        }
-
-        .about-header {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            flex-shrink: 0;
-            border: 4px solid white;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-        }
-
-        .about-intro h3 {
-            font-size: 1.5rem;
-            color: #2d3748;
-            margin-bottom: 0.5rem;
-        }
-
-        .highlight {
-            color: #667eea;
-        }
-
-        .about-text {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 1.5rem;
-            color: #4a5568;
-            line-height: 1.8;
-        }
-
         .resume-section {
             background: white;
             text-align: center;
@@ -388,11 +375,11 @@
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
+            .about-intro h1 {
+                font-size: 2rem;
             }
-            .hero h2 {
-                font-size: 1.2rem;
+            .about-intro h2 {
+                font-size: 1.1rem;
             }
             .section-title {
                 font-size: 2rem;
@@ -414,20 +401,35 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="home" class="hero">
-        <div>
-            <h1>Anushka Ramesh</h1>
-            <h2>Analytics Professional | Insights & Strategy</h2>
-            <p>Transforming complex data into actionable insights that drive business growth and strategic decision-making</p>
+    <section id="about" class="about-hero">
+        <div class="about-hero-content">
+            <div class="about-header">
+                <img src="images/WhatsApp Image 2025-01-30 at 7.38.24 PM (1).jpeg" alt="Anushka Ramesh" class="profile-photo">
+                <div class="about-intro">
+                    <h1>Anushka Ramesh</h1>
+                    <h2>Analytics Professional | Insights & Strategy</h2>
+                </div>
+            </div>
+            <div class="about-text">
+               I'm currently a graduate student at the <strong>University of Massachusetts Amherst's Isenberg School of Management</strong>, pursuing a Master of Science in Business Analytics with a concentration in Data Analytics. This program has been an exciting journey that blends my passion for data with practical, real-world business impact.
+            </div>
+            <div class="about-text">
+                What excites me most about Business Analytics is its ability to turn raw data into meaningful decisions. Through courses like Business Applications with Python and Statistics for Business, I've learned how to uncover patterns, ask the right questions, and transform complex datasets into clear, actionable insights. I'm continually inspired by how thoughtful analysis can shape strategy and drive measurable business growth.
+            </div>
+            <div class="about-text">
+                Before joining UMass, I worked as a Packaged App Development Associate at <strong>Accenture</strong> in Bangalore, supporting a high-traffic SAP Hybris eCommerce platform. There, I gained hands-on experience in data analysis, KPI tracking, and stakeholder collaboration within an enterprise environment. This experience reinforced the importance of data-driven insights and motivated me to further develop my analytical skill set through graduate studies.
+            </div>
+            <div class="about-text">
+                I'm currently seeking <strong>Summer 2026 internship opportunities</strong> where I can apply my analytical skills, contribute to impactful data-driven projects, and continue learning from experienced professionals. I'm especially interested in roles focused on business intelligence, data visualization, and strategic analytics.
+            </div>
             <div class="cta-buttons">
                 <a href="https://github.com/anushkaramesh" target="_blank" class="btn btn-primary">View My Work</a>
                 <a href="https://www.linkedin.com/in/anushka-ramesh" target="_blank" class="btn btn-secondary">Get In Touch</a>
@@ -541,44 +543,17 @@
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-header">
-                <img src="images/WhatsApp Image 2025-01-30 at 7.38.24 PM (1).jpeg" alt="Anushka Ramesh" class="profile-photo">
-
-                
-                <div class="about-intro">
-                    <h3>Hi, I'm <span class="highlight">Anushka Ramesh</span></h3>
-                    <p style="margin: 0; color: #4a5568;">MS in Business Analytics Student at <span class="highlight">University of Massachusetts Amherst</span></p>
-                </div>
-            </div>
-            <div class="about-text">
-               I’m currently a graduate student at the <strong>University of Massachusetts Amherst’s Isenberg School of Management</strong>, pursuing a Master of Science in Business Analytics with a concentration in Data Analytics. This program has been an exciting journey that blends my passion for data with practical, real-world business impact.
-            </div>
-            <div class="about-text">
-                What excites me most about Business Analytics is its ability to turn raw data into meaningful decisions. Through courses like Business Applications with Python and Statistics for Business, I’ve learned how to uncover patterns, ask the right questions, and transform complex datasets into clear, actionable insights. I’m continually inspired by how thoughtful analysis can shape strategy and drive measurable business growth.
-            </div>
-            <div class="about-text">
-                Before joining UMass, I worked as a Packaged App Development Associate at <strong>Accenture</strong> in Bangalore, supporting a high-traffic SAP Hybris eCommerce platform. There, I gained hands-on experience in data analysis, KPI tracking, and stakeholder collaboration within an enterprise environment. This experience reinforced the importance of data-driven insights and motivated me to further develop my analytical skill set through graduate studies.
-            </div>
-            <div class="about-text">
-                I’m currently seeking <strong>Summer 2026 internship opportunities</strong> where I can apply my analytical skills, contribute to impactful data-driven projects, and continue learning from experienced professionals. I’m especially interested in roles focused on business intelligence, data visualization, and strategic analytics.
-            </div>
-        </div>
-    </section>
-
     <section id="resume" class="resume-section">
         <div class="container">
             <h2 class="section-title">Resume</h2>
             <div class="resume-box">
                 <p>Download my resume to learn more about my experience, education, and skills.</p>
-<a href="https://drive.google.com/file/d/1R3tZxe2e9cucVU7QMFTMAbySxIkg2dTm/view?usp=sharing"
-  class="download-btn"
-  target="_blank"
-  rel="noopener noreferrer">
-  📄 Download Resume
-</a>
+                <a href="https://drive.google.com/file/d/1R3tZxe2e9cucVU7QMFTMAbySxIkg2dTm/view?usp=sharing"
+                   class="download-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  📄 Download Resume
+                </a>
             </div>
         </div>
     </section>
